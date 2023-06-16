@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @flashcard.question %>
+</p>
+
+<p>
+  <strong>Answer:</strong>
+  <%= @flashcard.answer %>
+</p>
+
+<p>
+  <strong>Option one:</strong>
+  <%= @flashcard.option_one %>
+</p>
+
+<p>
+  <strong>Option two:</strong>
+  <%= @flashcard.option_two %>
+</p>
+
+<p>
+  <strong>Option three:</strong>
+  <%= @flashcard.option_three %>
+</p>
+
+<p>
+  <strong>Streak:</strong>
+  <%= @flashcard.streak %>
+</p>
+
+<p>
+  <strong>Longest streak:</strong>
+  <%= @flashcard.longest_streak %>
+</p>
+
+<%= link_to 'Edit', edit_flashcard_path(@flashcard) %> |
+<%= link_to 'Back', flashcards_path %>
