@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_06_16_132909) do
+ActiveRecord::Schema.define(version: 2023_06_16_195414) do
 
   create_table "flashcards", force: :cascade do |t|
     t.string "question"
@@ -19,10 +19,9 @@ ActiveRecord::Schema.define(version: 2023_06_16_132909) do
     t.string "option_one"
     t.string "option_two"
     t.string "option_three"
-    t.integer "streak"
-    t.integer "longest_streak"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
